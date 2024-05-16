@@ -1,0 +1,101 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="Style1.css">    
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>  
+
+function validateform()
+{  
+  var name=document.myform.Uname.value;  
+  var password=document.myform.Pass.value;  
+    
+  if (name==null || name=="")
+  {  
+    alert("Username can't be blank");  
+    return false;  
+  }
+  else if(password.length<6)
+  {  
+    alert("Password must be at least 6 characters long.");  
+    return false;  
+  }
+  
+  else
+  {
+    alert('Form Succesfully Submitted');
+    window.open("logindone.html")
+    return true;
+  }  
+}  
+</script>  
+
+</head>    
+<body> 
+  <div class = "container-fluid"></div>
+  <header>
+
+    <div class="navbar">
+    
+    <ul>
+    
+      <li style="margin-left:-120px; opacity:500%; margin-top: 2px;"><a href="Home.html" class="Logo"><img src="LOGO.png" width="100px" height="65px"></a></li>
+		
+      <li style="margin-left:-10px; font-size: 25px;"><a href="Home.html">Home</a></li>
+      
+      <li style="margin-left:60px; font-size: 25px;"><a href="aboutusfood.html">About Us</a></li>
+      
+      <li style="margin-left:60px; font-size: 25px;"><a href="recipes.html">Recipes</a></li>
+      
+      <li style="margin-left:80px; font-size: 25px;"><a href="review.html">Review</a></li>
+      
+      <li style="margin-left:80px; font-size: 25px;"><a href="login.html">Login</a></li>
+    
+    </ul>
+    
+    </div>
+    
+    </header>
+<br>
+<br>
+<br><br><br><br>
+
+
+    <center>
+    <div class="login">   
+    <form id="login" action="login.php" name="myform" method="post"> 
+    <div class="glow">
+        
+<h3 style="font-size:75px; font-family:Brush script mt;margin-left:15px;">Login Now</h3> 
+
+</div>   <br>
+        <label><b>User Name     
+        </b>  <br>  
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="Log In Here" onclick="validateform()">
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        
+        </form>  
+
+</div>
+</center>
+</div>
+</body>    
+</html> 

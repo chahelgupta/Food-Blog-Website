@@ -1,0 +1,100 @@
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: box-border;
+font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.6s;
+padding: 0px 0px;
+height: 70px;
+z-index: 1000000;
+background: #594545;
+}
+
+header.Logo{
+position: relative;
+font-weight: 700;
+color: #fff;
+font-size: 2em;
+text-transform: uppercase;
+transition: 0.6s;
+}
+
+header ul{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header ul li{
+position: relative;
+list-style: none;
+margin-top:-10px;
+}
+
+header ul li a{
+position: relative;
+margin: 0 15px;
+text-decoration: none;
+color: #fff;
+letter-spacing: 2px;
+font-weight: 500px;
+transition: 0.6s;
+float: left;
+padding-left:25px;
+}
+
+div.navbar{
+padding: 20px;
+margin-top: 15px;
+float: left;
+margin-left: 70px;
+}
+
+div.product1{
+margin-left:55px;
+width:300px;
+height:550px;
+float:left;
+margin-bottom:80px;
+transition-duration:0.3s;
+}
+
+div.product1:hover{
+  background-color: #fff;  
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.glow {
+position:relative;
+text-align:center;
+font-size: 200px;
+color: #594545;
+text-align: center;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #D7C0AE, 0 0 40px #D7C0AE, 0 0 50px #D7C0AE, 0 0 60px #D7C0AE, 0 0 70px #D7C0AE;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #D7C0AE, 0 0 40px #D7C0AE, 0 0 50px #D7C0AE, 0 0 60px #D7C0AE, 0 0 70px #D7C0AE, 0 0 80px #D7C0AE;
+  }
+}
+
+
