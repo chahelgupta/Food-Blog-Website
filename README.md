@@ -1,3 +1,5 @@
+This project is co-owned by: [@chahelgupta](https://www.github.com/chahelgupta) [@amishidesai](https://www.github.com/AmishiDesai04) 
+
 Welcome to FoodBlog! This repository contains the source code for a basic HTML/CSS website for a food blog. Whether you're a food enthusiast, a chef, or someone who simply loves to explore different cuisines, FoodBlog has something for you.
 
 The Delicious Delights Website is a project aimed at creating an interactive and visually appealing platform for food enthusiasts. The website features various sections including Home, About Us, Recipes, Review, and Login pages. Users can explore recipes, read reviews, and engage with the community.
